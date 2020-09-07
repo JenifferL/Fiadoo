@@ -1,0 +1,60 @@
+package fiado;
+
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+
+		Consumidor consumidor = new Consumidor();
+
+		consumidor.fiado = new int[10];
+		System.out.println("Consumidor: " + consumidor.nome);
+
+		// consumidor Marcos = new consumidor();
+		// Marcos.nome = "Marcos";
+		// System.out.println("Consumidor: " + Marcos.nome);
+
+
+
+
+	// public static void main(String[] args) {
+	// int[] fiado = new int[10];
+	// fiado[0] = 3;
+	// fiado[3] = 10;
+
+	Scanner scanner = new Scanner(System.in);
+
+	System.out.print("Qual o nome do cliente: ");
+	String nome = scanner.nextLine();
+
+	System.out.print("Informe o valor da compra: ");
+
+	consumidor[0] = Integer.valueOf(scanner.nextLine());
+
+	int total = somaWhile(consumidor.fiado);
+
+	if(total>100)
+	{
+		System.out.println("Cliente " + nome + " deve: " + total + " reais" + " e Ganhou um brinde!");
+	}
+	
+	else	{
+		System.out.println("Cliente " + nome + " deve: " + total + " reais" + " Não ganhou um brinde!");
+	}
+
+	public static int somaWhile(int[] fiado) {
+		int i = 0;
+		int total = 0;
+		while (i < fiado.length) {
+			total += fiado[i];
+			// total = total + fiado[i];
+			i++;
+			// i = i+1;
+		}
+		return total;
+
+	}
+}
+
+// return total;
