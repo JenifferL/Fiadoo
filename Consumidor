@@ -1,0 +1,17 @@
+package fiado;
+
+public class Consumidor {
+	
+	public String nome;
+	public int[] fiado;
+	
+	
+	public String getNome() {
+		return this.nome;
+	}
+	public void setNome(String n) {
+		this.nome = n;
+	}	
+	
+	
+}
